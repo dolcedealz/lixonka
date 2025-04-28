@@ -2,7 +2,7 @@ import express from 'express';
 import dotenv from 'dotenv';
 import Database from 'better-sqlite3';
 
-dotenv.config();
+dotenv.config({ path: './datad.env' });
 
 const app = express();
 const db = new Database('casino.db');
